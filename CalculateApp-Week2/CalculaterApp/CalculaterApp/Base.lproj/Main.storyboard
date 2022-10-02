@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CalculaterApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7aa-72-M1i">
+                                <rect key="frame" x="20" y="56" width="364" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7aa-72-M1i" secondAttribute="height" multiplier="182:25" id="A8X-mf-XXw"/>
+                                    <constraint firstAttribute="height" constant="50" id="Ok1-fb-FQA"/>
+                                    <constraint firstAttribute="width" constant="364" id="bXb-pN-rjx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08f-Ee-hWq">
+                                <rect key="frame" x="20" y="123" width="364" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="08f-Ee-hWq" secondAttribute="height" multiplier="182:19" id="08W-jT-c0p"/>
+                                    <constraint firstAttribute="height" constant="38" id="ZYE-SA-LLc"/>
+                                    <constraint firstAttribute="width" constant="364" id="enx-r6-X7r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="txs-K9-F0a">
+                                <rect key="frame" x="16" y="169" width="382" height="278.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="udj-At-1a5">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="52.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hX6-Cb-tmk">
+                                                <rect key="frame" x="0.0" y="0.0" width="90" height="52.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="90" id="4bb-ml-Ci8"/>
+                                                    <constraint firstAttribute="height" constant="52.5" id="Gda-AU-etg"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="7"/>
+                                                <connections>
+                                                    <action selector="didTapSevenDigitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z8f-pM-yhS"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cY6-F0-IDk">
+                                                <rect key="frame" x="97" y="0.0" width="90" height="52.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="52.5" id="Ibm-hT-jSU"/>
+                                                    <constraint firstAttribute="width" constant="90" id="R5q-jz-FE9"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="8">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="32"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="didTapSevenDigitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4rp-8q-I2I"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5iW-Sk-8hQ">
+                                                <rect key="frame" x="194" y="0.0" width="90" height="52.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="52.5" id="8Ti-Ad-YQf"/>
+                                                    <constraint firstAttribute="width" constant="90" id="CbF-jh-1bR"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="9"/>
+                                                <connections>
+                                                    <action selector="didTapSevenDigitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F6A-SS-eeH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C2X-Is-jdF">
+                                                <rect key="frame" x="291" y="0.0" width="91" height="52.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="52.5" id="FL4-cA-k9C"/>
+                                                    <constraint firstAttribute="width" constant="90" id="M38-dK-k07"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="="/>
+                                                <connections>
+                                                    <action selector="didTapOperandButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BVK-dl-kI3"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Zjb-c9-0Sw">
+                                        <rect key="frame" x="0.0" y="56.5" width="382" height="52.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s52-UD-yLO">
+                                                <rect key="frame" x="0.0" y="0.0" width="90" height="52.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="52.5" id="TIV-0R-vW4"/>
+                                                    <constraint firstAttribute="width" constant="90" id="osx-Tn-ZEh"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="7"/>
+                                                <connections>
+                                                    <action selector="didTapSevenDigitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nEp-CP-7C8"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDs-Ea-U73">
+                                                <rect key="frame" x="97" y="0.0" width="90" height="52.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="52.5" id="15x-P4-w3s"/>
+                                                    <constraint firstAttribute="width" constant="90" id="WRN-va-cbL"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="8"/>
+                                                <connections>
+                                                    <action selector="didTapSevenDigitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pG2-BI-Eq0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xs5-Hf-B7L">
+                                                <rect key="frame" x="194" y="0.0" width="91" height="52.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="52.5" id="u0N-ka-30n"/>
+                                                    <constraint firstAttribute="width" constant="90" id="w7I-87-x5t"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="9"/>
+                                                <connections>
+                                                    <action selector="didTapSevenDigitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rUF-CY-ZwV"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7y6-6U-5pi">
+                                                <rect key="frame" x="292" y="0.0" width="90" height="52.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="52.5" id="6YL-rL-grS"/>
+                                                    <constraint firstAttribute="width" constant="90" id="A3o-2y-UXg"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="*"/>
+                                                <connections>
+                                                    <action selector="didTapOperandButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tAu-cC-m38"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Xlf-1H-wNw">
+                                        <rect key="frame" x="0.0" y="113" width="382" height="52.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULq-Og-6aV">
+                                                <rect key="frame" x="0.0" y="0.0" width="90" height="52.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="52.5" id="SC0-sB-lSy"/>
+                                                    <constraint firstAttribute="width" constant="90" id="SIj-Li-h1W"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="4"/>
+                                                <connections>
+                                                    <action selector="didTapSevenDigitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OSc-U3-i6u"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bC-7q-eSf">
+                                                <rect key="frame" x="97" y="0.0" width="90" height="52.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="90" id="Lgu-sb-hmN"/>
+                                                    <constraint firstAttribute="height" constant="52.5" id="yr7-cd-vJ8"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="5"/>
+                                                <connections>
+                                                    <action selector="didTapSevenDigitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gOz-YF-87H"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dEK-DB-iQu">
+                                                <rect key="frame" x="194" y="0.0" width="91" height="52.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="52.5" id="KrM-7M-vKb"/>
+                                                    <constraint firstAttribute="width" constant="90" id="Ndd-kG-GVU"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="6"/>
+                                                <connections>
+                                                    <action selector="didTapSevenDigitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k5R-rR-tVJ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZuX-0N-xQ7">
+                                                <rect key="frame" x="292" y="0.0" width="90" height="52.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="52.5" id="oUM-ay-5so"/>
+                                                    <constraint firstAttribute="width" constant="90" id="u55-aJ-sSR"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="/"/>
+                                                <connections>
+                                                    <action selector="didTapOperandButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iOk-dr-VaN"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="szn-Mi-hu5">
+                                        <rect key="frame" x="0.0" y="169.5" width="382" height="52.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFr-sU-fj0">
+                                                <rect key="frame" x="0.0" y="0.0" width="90" height="52.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="52.5" id="0PR-aG-prb"/>
+                                                    <constraint firstAttribute="width" constant="90" id="4gX-vs-EwZ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="1"/>
+                                                <connections>
+                                                    <action selector="didTapSevenDigitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Kv-Zk-Zy2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3v-N6-hrc">
+                                                <rect key="frame" x="97" y="0.0" width="90" height="52.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="90" id="CUu-Pv-jRt"/>
+                                                    <constraint firstAttribute="height" constant="52.5" id="PJ1-Ck-hgK"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="2"/>
+                                                <connections>
+                                                    <action selector="didTapSevenDigitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6pF-wX-C0D"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOc-2U-kGR">
+                                                <rect key="frame" x="194" y="0.0" width="91" height="52.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="90" id="2pW-6W-67w"/>
+                                                    <constraint firstAttribute="height" constant="52.5" id="L4q-as-Z4E"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="3"/>
+                                                <connections>
+                                                    <action selector="didTapSevenDigitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qpL-Il-AJs"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zCP-mZ-xjj">
+                                                <rect key="frame" x="292" y="0.0" width="90" height="52.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="52.5" id="Jqr-xe-rdS"/>
+                                                    <constraint firstAttribute="width" constant="90" id="P8v-2l-3rb"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="+"/>
+                                                <connections>
+                                                    <action selector="didTapOperandButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2dV-Lg-8Ow"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="DO3-7y-GL7">
+                                        <rect key="frame" x="0.0" y="226" width="382" height="52.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLa-by-6kY">
+                                                <rect key="frame" x="0.0" y="0.0" width="90" height="52.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="52.5" id="8jO-O8-hRg"/>
+                                                    <constraint firstAttribute="width" constant="90" id="mJq-Aw-Kxa"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="C"/>
+                                                <connections>
+                                                    <action selector="didTapClearButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="27W-m3-aDf"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xh9-fh-u7f">
+                                                <rect key="frame" x="97" y="0.0" width="90" height="52.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="52.5" id="SSL-4e-mgS"/>
+                                                    <constraint firstAttribute="width" constant="90" id="xbx-xo-XbL"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="0"/>
+                                                <connections>
+                                                    <action selector="didTapSevenDigitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vp4-lq-zMw"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jln-cd-0uC">
+                                                <rect key="frame" x="194" y="0.0" width="91" height="52.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="52.5" id="4ft-Ie-1dm"/>
+                                                    <constraint firstAttribute="width" constant="90" id="62C-AQ-GcG"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="."/>
+                                                <connections>
+                                                    <action selector="didTapSevenDigitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L5W-3a-sYZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJU-me-pSx">
+                                                <rect key="frame" x="292" y="0.0" width="90" height="52.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="52.5" id="LqY-oL-NqL"/>
+                                                    <constraint firstAttribute="width" constant="90" id="Qrp-Xf-GjY"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="-"/>
+                                                <connections>
+                                                    <action selector="didTapOperandButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GjM-4N-khh"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="txs-K9-F0a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6u2-DL-2BL"/>
+                            <constraint firstItem="txs-K9-F0a" firstAttribute="top" secondItem="08f-Ee-hWq" secondAttribute="bottom" constant="8" symbolic="YES" id="6ym-4g-tcc"/>
+                            <constraint firstItem="08f-Ee-hWq" firstAttribute="top" secondItem="7aa-72-M1i" secondAttribute="bottom" constant="17" id="78x-fk-aTv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7aa-72-M1i" secondAttribute="trailing" constant="30" id="CHP-B0-boz"/>
+                            <constraint firstItem="txs-K9-F0a" firstAttribute="top" secondItem="08f-Ee-hWq" secondAttribute="bottom" constant="8" symbolic="YES" id="D8s-MT-IlJ"/>
+                            <constraint firstItem="08f-Ee-hWq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="EIW-lj-v3t"/>
+                            <constraint firstItem="7aa-72-M1i" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="IV9-uU-IvA"/>
+                            <constraint firstItem="7aa-72-M1i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="LUU-2j-7HY"/>
+                            <constraint firstItem="txs-K9-F0a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ThG-oP-hvE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="txs-K9-F0a" secondAttribute="trailing" constant="16" id="eqB-fQ-k9G"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="08f-Ee-hWq" secondAttribute="trailing" constant="30" id="nZy-SI-Edf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="08f-Ee-hWq" id="NWt-Fj-6nQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="67.633928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
